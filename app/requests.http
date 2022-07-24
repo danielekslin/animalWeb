@@ -1,0 +1,94 @@
+
+# ###
+
+# @web = http://localhost:3100
+
+# ###
+
+# GET {{web}}/all
+
+# ###
+
+# POST {{web}}/add
+# Content-Type: application/json
+
+# {
+#     "animalName":"elephant",
+#     "lifespan":50,
+#     "isMammal":true,
+#     "whereItLives":"africa"
+    
+ 
+# }
+
+
+
+# ###
+
+# PUT {{web}}/update/animal
+# Content-Type: application/json
+
+# {
+#     "animalNewInfo": "lephants are used as working animals in Asia. In the past, they were used in war; today
+#     , they are often controversially put on display in zoos, or exploited for entertainment in circuses.
+#      Elephants are highly recognisable and have been featured in art, folklore, religion, literature, and popular culture."
+# }
+
+# ###
+
+# DELETE {{web}}/delete/50
+
+# ###
+
+# POST {{web}}/data
+# Content-Type: application/json
+
+# {
+#    "examaple":"works?"
+# }
+
+
+@web = http://localhost:3000
+
+### get the the html
+
+GET {{web}}
+
+### get - all(show all requests)
+
+GET {{web}}/all
+
+### post
+
+POST {{web}}/add
+Content-Type: application/json
+
+{
+   "id":1,
+   "foodName":"pancake",
+   "duartion":5,
+   "difficulty":"easy"
+}
+
+### another post
+POST {{web}}/add
+Content-Type: application/json
+
+{
+   "userName":"daniel",
+   "animalData":"bla bla animal data",
+
+}
+
+### put
+
+PUT {{web}}/update/pancake
+Content-Type: application/json
+
+{
+   "newDifficulty":"medium"
+}
+
+### delete
+
+DELETE {{web}}/delete/3
